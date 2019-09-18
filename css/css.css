@@ -1,0 +1,176 @@
+.main-container{
+    margin: 25px 85px;
+    background-image: url("../sara-kurfess-k68S17uT9dU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 225%;
+    height: 615px;
+}
+.page-container-1{
+    margin: 30px 50px;
+    background-color:white;
+    opacity: 0.3;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+.search-field{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+    position: relative;
+    bottom: -15px;
+    
+}
+.logo{
+    width: 65%;
+    margin: 40px 10px 10px 10px;
+    /* border: solid 2px; */
+}
+.search-field-input{
+    font-size: 20px;  
+}
+i{
+    width: 161px;
+}
+
+.logo-size{
+    width: 50%;
+    /* border: solid 2px; */
+    margin-left: 65px;
+}
+.logo2-size{
+    width: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo3-size{
+    width: 135%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7px;
+}
+.div-bottom{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 35px 0px;
+}
+.bottom-right{
+    /* border: solid 1px; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    margin: 0px 0px;
+}
+h2{
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0% 0 0 0;
+    text-align: center;
+}
+h5{
+    font-size: 1.1rem;
+}
+.card-container{
+    position: relative;
+    height: 305px;
+    width: 185px;
+    padding: 0px 0px;
+    perspective: 200rem;
+    margin: 5px 5px;
+}
+.card-container:hover .card-front{
+    transform: rotateY(180deg)
+}
+.card-container:hover .card-back{
+    transform: rotateY(0deg)
+}
+.card-back {
+    transform: rotateY(180deg);
+    height: 300px;
+    width: 225px;
+}
+.card{
+    position: absolute;
+    width: 185px;
+    transition: all 0.9s;
+    backface-visibility: hidden;
+}
+.card-back .card-body{
+    position: relative;
+}
+.card-body a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 50% 0 0 -23%;
+}
+.card-img-top{
+    height: 280px;
+    width: 185px;
+}
+.row{
+    margin: 0px 0px;
+}
+.pre-scrollable {
+    max-height: 450px;
+}
+
+footer{
+    background-image: url("../footer.jpg");
+    margin: -15px 85px 10px;;
+    background-repeat: no-repeat;
+    background-size: 225%;
+    display: flex;
+}
+
+.logo-footer1{
+    width: 33%;
+    display: flex;
+    align-items: center;
+}
+.logo-footer2{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-footer3{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 110px;
+}
+
+.description{
+    height: 155px;
+    margin-top: 10px;
+}
+.spinner-border{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+  }
+  
+  .form-control{
+    width: 425px;
+    margin-right: 41px;
+  }
+  .form-inline{
+    width: 425px;   
+    position: relative;
+    right: -147px;
+  }
