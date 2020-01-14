@@ -6,20 +6,13 @@ fetch(url).then(function (response) {
     }
     throw new Error(reponse.statusText);
 }).then(function (json) {
-
     books = json.books;
-    console.log(books);
-
 
     //functions->
-
     booksCatalog = document.getElementById("catalog");
-    
     getValue();
     titleArrayFunction = bookTitles(books);
     creatCatalog(books)
-
-
 
 }).catch(function (error) {
 
@@ -31,9 +24,6 @@ spinner1.classList.remove("spinner-border");
 let loadingBackground = document.getElementById("loadingBackground");
 loadingBackground.classList.remove("page-container-1");
 
-
-
-
 let books = [];
 let booksCatalog = 0;
 let searchInput = 0;
@@ -41,7 +31,7 @@ let text = [];
 let titleArrayFunction = 0;
 let titleArray = [];
 
-//1
+// Creating Html cataloge
 function creatCatalog(array) {
     let x = [];
     for (let i = 0; i < array.length; i++) {
@@ -66,7 +56,7 @@ function creatCatalog(array) {
     }
     booksCatalog.innerHTML = x;
 }
-//2
+// Getting the typed letter by the user
 function getValue() {
     $( "#search-input" ).keydown(function() {
         let finalArray = [];
@@ -76,14 +66,9 @@ function getValue() {
         titleArray.forEach(item => {
             if (item.toLowerCase().indexOf(search_term) !== -1) {
                 matched_terms.push(item);
-                console.log(matched_terms);
-                
-                
                 for (let i = 0; i < books.length; i++){
                     if (books[i].title.startsWith(item)){
                         finalArray.push(books[i]);
-                        console.log(finalArray);
-                        
                     }
                 }   
             }
@@ -91,7 +76,7 @@ function getValue() {
         creatCatalog(finalArray);
     });
 }
-//3
+//Filling the titleArray with all of the books titles
 function bookTitles(array) {
     for (let i = 0; i < array.length; i++) {
         titleArray.push(array[i].title);
